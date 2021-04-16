@@ -1,3 +1,4 @@
+  
 import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
 import numeral from "numeral";
@@ -47,7 +48,7 @@ const options = {
   },
 };
 
-const buildChartData = (data, casesType = 'cases') => {
+const buildChartData = (data, casesType) => {
   let chartData = [];
   let lastDataPoint;
   for (let date in data.cases) {
